@@ -1,0 +1,35 @@
+.slick-slide img {
+  max-width:  100%;
+}
+.slick-slide {
+  box-sizing: border-box;
+  margin: 0 5px;
+}
+.slick-list {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+p.title {
+  font-weight: bold;
+  font-size: 110%;
+}
+.caption:hover {
+  background: rgba(0, 0, 0, 0.5)
+}
+.caption i{
+  opacity: 0.65;
+}
+.caption i.bi-heart {
+  display: none;
+}
+.caption i.bi-heart-fill {
+  color: red;
+}
+.caption i.bi-heart-fill:hover {
+  color: white;
+}
+.caption:hover .bi-heart {
+  display: block;
+}
+.caption:hover .bi-heart:hover {
+  color:red;
+}

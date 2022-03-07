@@ -1,0 +1,19 @@
+type User {
+  id: ID!
+  name: String!
+  lastName: String!
+  email: String!
+  password: String!
+  admin: Boolean!
+}
+
+extend type Query {
+  user(id: ID! @eq): User @find
+  users: [User!]! @all
+  login(email: String!, password: String!): String
+}
+
+extend type Mutation {
+  createUser(name: String!, lastName: String!,email: String!, password: String!, admin: Boolean!): User @create
+  
+}

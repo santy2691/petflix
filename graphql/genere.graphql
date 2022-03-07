@@ -1,0 +1,10 @@
+type Genre {
+    id: ID!
+    name: String!
+    movies: [Movie!]! @belongsToMany
+}
+
+extend type Query {
+    genre(id: ID! @eq): Genre @find
+    genres: [Genre!]! @all 
+}
